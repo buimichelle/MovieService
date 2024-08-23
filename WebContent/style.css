@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+.autocomplete-suggestions { font-family: 'Times New Roman'; border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { font-family: 'Times New Roman'; padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { font-family: 'Times New Roman'; background: lightblue; }
+.autocomplete-suggestions strong { font-family: 'Times New Roman'; font-weight: normal; color: #3399FF; }
+.autocomplete-group { font-family: 'Times New Roman'; padding: 2px 5px; }
+.autocomplete-group strong { font-family: 'Times New Roman'; display: block; border-bottom: 1px solid #000; }
+
+
+body {
+    background-color: Azure;
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 30px;
+    font-family: "Times New Roman";
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-title {
+    margin-right: 10px; /* Adjust margin as needed */
+    color: white;
+    text-decoration: none;
+    font-family: "Times New Roman";
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    font-family: "Times New Roman";
+
+}
+
+.search-container [type=text], select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Times New Roman";
+
+}
+
+
+#queryButton {
+    font-family: "Times New Roman";
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: darkblue;
+}
+
+
+ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.links li {
+    margin: 0 10px;
+}
+
+a.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Add more CSS for link styling as needed */
+
+.makeSale-form input[type=text], select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.makeSale-form input[type=submit] {
+    width: 10%;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.makeSale-form input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+
+
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 0 auto;*/
+    border: none;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+.movie_pg {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.movie_pg input[type=submit] {
+    width: 50%;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.movie_pg input[type=submit]:hover{
+    background-color: darkblue;
+}
+
+.Addbuttons {
+    font-family: "Times New Roman";
+    font-weight: normal;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autocomplete-searchbox {
+    height: 50px;
+    width: 600px;
+}
+
+
+.autocomplete-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.Addbuttons:hover {
+    background-color: darkblue;
+}
+
+.browse {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background: cadetblue;
+    border-radius: 10px;
+}
+
+.browse a {
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.browse a:hover{
+    color: darkblue;
+}
+
+.genreList {
+    margin: 0 auto;
+    text-align: center;
+    column-count: 3;
+    column-gap: 5px;
+    background: cadetblue;
+    border-radius: 10px;
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+.genreList a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: white;
+    text-decoration: none;
+}
+
+.genreList a:hover{
+    color: darkblue;
+}

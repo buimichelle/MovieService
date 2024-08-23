@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-container">
+        <h1 class="header-title">FABFLIX</h1>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="index.html">TOP 20 MOVIES</a>
+            <a href="cart.html">CHECK OUT</a>
+        </nav>
+    </div>
+    <div class="search-container">
+        <input type="text" name="query" id="autocomplete" class="autocomplete-searchbox form-control" placeholder="FULL TEXT SEARCH"/>
+        <input type="hidden" name="page" id="qpage" value="1"> <!-- Hidden page input -->
+        <input type="hidden" name="sort" id="qsort" value="titleratingup"> <!-- Hidden page input -->
+        <input type="hidden" name="limit" id="qlimit" value="10">
+        <button id="queryButton"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+    <h1 style="text-align: center">Purchase Success!!</h1>
+    <table id=cart_list class="table table-striped">
+        <thead>
+        <tr>
+            <th>Movie</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+        <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+        <tbody id=item_list_body></tbody>
+    </table>
+    <h2 id = "sale_id"></h2>
+    <h3 class = "content" id = "display_total"></h3>
+
+
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='confirmation.js'></script>
+<!-- Include Devbridge Autocomplete -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <!-- include our own JS file -->
+    <script src="./autocomplete.js"></script>
+</body>
+</html>

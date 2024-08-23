@@ -1,0 +1,131 @@
+<!-- SEARCH & BROWSE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fabflix</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The titleratingup action is disabled to allow your own implementation. -->
+<div class="header">
+    <div class="header-container">
+        <h1 class="header-title">FABFLIX</h1>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="index.html">TOP 20 MOVIES</a>
+            <a href="cart.html">CHECK OUT</a>
+        </nav>
+    </div>
+    <div class="search-container">
+        <input type="text" name="query" id="autocomplete" class="autocomplete-searchbox form-control" placeholder="FULL TEXT SEARCH"/>
+        <input type="hidden" name="page" id="qpage" value="1"> <!-- Hidden page input -->
+        <input type="hidden" name="sort" id="qsort" value="titleratingup"> <!-- Hidden page input -->
+        <input type="hidden" name="limit" id="qlimit" value="10">
+        <button id="queryButton"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+
+<div class="space"></div>
+<h2  style = "font-family: 'Times New Roman'; text-align: center; color: darkblue;"><strong>Advanced Search</strong></h2>
+<div class = "movie_pg">
+    <form ACTION="search.html" METHOD="get">
+        Title: <input TYPE="TEXT" name="movie" id = "movie" placeholder="(Use % to replace any strings. e.g. Arnold%)">
+        Year: <input TYPE="TEXT" name="year" id = "year">
+        Director: <input TYPE="TEXT" name="director" id = "director" placeholder="(Use % to replace any strings. e.g. Arnold%)">
+        Star name: <input TYPE="TEXT" name="name" id = "star_name" placeholder="(Use % to replace any strings. e.g. Arnold%)">
+        <input type="hidden" name="page" id="page" value="1"> <!-- Hidden page input -->
+        <input type="hidden" name="sort" id="sort" value="titleratingup"> <!-- Hidden page input -->
+        <input type="hidden" name="limit" id="limit" value="10"> <!-- Hidden page input -->
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<div class="space"></div>
+
+
+<h2 style = "font-family: 'Times New Roman'; text-align: center; color: darkblue;"><strong>Browse by Title</strong></h2>
+
+<div class = "browse">
+    <div class = "nonAlpha">
+        <a href = "single-letter-movie.html?id=*&page=1&sort=titleratingup&limit=10" >*</a>
+        <a href = "single-letter-movie.html?id=0&page=1&sort=titleratingup&limit=10" >0</a>
+        <a href = "single-letter-movie.html?id=1&page=1&sort=titleratingup&limit=10" >1</a>
+        <a href = "single-letter-movie.html?id=2&page=1&sort=titleratingup&limit=10" >2</a>
+        <a href = "single-letter-movie.html?id=3&page=1&sort=titleratingup&limit=10" >3</a>
+        <a href = "single-letter-movie.html?id=4&page=1&sort=titleratingup&limit=10" >4</a>
+        <a href = "single-letter-movie.html?id=5&page=1&sort=titleratingup&limit=10" >5</a>
+        <a href = "single-letter-movie.html?id=6&page=1&sort=titleratingup&limit=10" >6</a>
+        <a href = "single-letter-movie.html?id=7&page=1&sort=titleratingup&limit=10" >7</a>
+        <a href = "single-letter-movie.html?id=8&page=1&sort=titleratingup&limit=10" >8</a>
+        <a href = "single-letter-movie.html?id=9&page=1&sort=titleratingup&limit=10" >9</a>
+    </div>
+
+    <div class = "alpha">
+        <a href = "single-letter-movie.html?id=a&page=1&sort=titleratingup&limit=10" >a</a>
+        <a href = "single-letter-movie.html?id=b&page=1&sort=titleratingup&limit=10" >b</a>
+        <a href = "single-letter-movie.html?id=c&page=1&sort=titleratingup&limit=10" >c</a>
+        <a href = "single-letter-movie.html?id=d&page=1&sort=titleratingup&limit=10" >d</a>
+        <a href = "single-letter-movie.html?id=e&page=1&sort=titleratingup&limit=10" >e</a>
+        <a href = "single-letter-movie.html?id=f&page=1&sort=titleratingup&limit=10" >f</a>
+        <a href = "single-letter-movie.html?id=g&page=1&sort=titleratingup&limit=10" >g</a>
+        <a href = "single-letter-movie.html?id=h&page=1&sort=titleratingup&limit=10" >h</a>
+        <a href = "single-letter-movie.html?id=i&page=1&sort=titleratingup&limit=10" >i</a>
+        <a href = "single-letter-movie.html?id=j&page=1&sort=titleratingup&limit=10" >j</a>
+        <a href = "single-letter-movie.html?id=k&page=1&sort=titleratingup&limit=10" >k</a>
+        <a href = "single-letter-movie.html?id=l&page=1&sort=titleratingup&limit=10" >l</a>
+        <a href = "single-letter-movie.html?id=m&page=1&sort=titleratingup&limit=10" >m</a>
+        <a href = "single-letter-movie.html?id=n&page=1&sort=titleratingup&limit=10" >n</a>
+        <a href = "single-letter-movie.html?id=o&page=1&sort=titleratingup&limit=10" >o</a>
+        <a href = "single-letter-movie.html?id=p&page=1&sort=titleratingup&limit=10" >p</a>
+        <a href = "single-letter-movie.html?id=q&page=1&sort=titleratingup&limit=10" >q</a>
+        <a href = "single-letter-movie.html?id=r&page=1&sort=titleratingup&limit=10" >r</a>
+        <a href = "single-letter-movie.html?id=s&page=1&sort=titleratingup&limit=10" >s</a>
+        <a href = "single-letter-movie.html?id=t&page=1&sort=titleratingup&limit=10" >t</a>
+        <a href = "single-letter-movie.html?id=u&page=1&sort=titleratingup&limit=10" >u</a>
+        <a href = "single-letter-movie.html?id=v&page=1&sort=titleratingup&limit=10" >v</a>
+        <a href = "single-letter-movie.html?id=w&page=1&sort=titleratingup&limit=10" >w</a>
+        <a href = "single-letter-movie.html?id=x&page=1&sort=titleratingup&limit=10" >x</a>
+        <a href = "single-letter-movie.html?id=y&page=1&sort=titleratingup&limit=10" >y</a>
+        <a href = "single-letter-movie.html?id=z&page=1&sort=titleratingup&limit=10" >z</a>
+    </div>
+
+</div>
+<div class="space"></div>
+
+
+
+<h2 style = "font-family: 'Times New Roman'; text-align: center; color: darkblue;"><strong>Browse by Genre</strong></h2>
+
+
+<div class = "genreList">
+    <ul id = "genres_list" style = "text-align: center;">
+    </ul>
+</div>
+
+<div class="space"></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Include Devbridge Autocomplete -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<!-- include our own JS file -->
+<script src="./home.js"></script>
+<script src="./autocomplete.js"></script>
+
+<div class="space"></div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: Azure;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: darkblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 10px;
+    height: 75px;
+}
+
+.header-title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: white;
+}
+
+.header-not-title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.links li {
+    margin: 0 10px;
+}
+
+a.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Add more CSS for link styling as needed */
+
+
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+.movie_pg {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.movie_pg input[type=submit] {
+    width: 50%;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.movie_pg input[type=submit]:hover{
+    background-color: darkblue;
+}
+
+.Addbuttons {
+    font-family: "Times New Roman";
+    font-weight: normal;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Addbuttons:hover {
+    background-color: darkblue;
+}
+
+.browse {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: cadetblue;
+    border-radius: 10px;
+}
+
+.browse a {
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.browse a:hover{
+    color: darkblue;
+}
+
+.genreList {
+    margin: 0 auto;
+    text-align: center;
+    column-count: 3;
+    column-gap: 5px;
+    background: cadetblue;
+    border-radius: 10px;
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+.genreList a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: white;
+    text-decoration: none;
+}
+
+.genreList a:hover{
+    color: darkblue;
+}

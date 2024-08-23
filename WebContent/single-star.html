@@ -1,0 +1,82 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fabflix</title>
+
+</head>
+<body>
+<div class="header">
+    <div class="header-container">
+        <h1 class="header-title">FABFLIX</h1>
+        <nav class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="index.html">TOP 20 MOVIES</a>
+            <a href="cart.html">CHECK OUT</a>
+        </nav>
+    </div>
+    <div class="search-container">
+        <input type="text" name="query" id="autocomplete" class="autocomplete-searchbox form-control" placeholder="FULL TEXT SEARCH"/>
+        <input type="hidden" name="page" id="qpage" value="1"> <!-- Hidden page input -->
+        <input type="hidden" name="sort" id="qsort" value="titleratingup"> <!-- Hidden page input -->
+        <input type="hidden" name="limit" id="qlimit" value="10">
+        <button id="queryButton"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+
+<h2 class = "content" id ="star_name_here"></h2>
+<h2 id="results" class = "content"></h2>
+
+<!-- H3 body is left empty here, will be populated with the data retrieved with single-star.js -->
+<!-- single-star.js will find this html element by it's id "star_info" -->
+<h3 class = "content" id = "star_info"></h3>
+<table id=star_table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Movie Title</th>
+        <th>Release Year</th>
+        <th>Director</th>
+        <th>
+    </tr>
+    </thead>
+
+    <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+    <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+    <tbody id=star_table_body></tbody>
+</table>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="single-star.js"></script>
+<script src="./autocomplete.js"></script>
+
+</body>
+
+
+</html>
