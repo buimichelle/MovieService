@@ -1,20 +1,3 @@
-- # General
-    - #### Team#: 
-        Oat
-    
-    - #### Names: 
-        Michelle Bui, Estefany Siguantay-Cortez
-    
-    - #### Project 5 Video Demo Link:
-        https://www.youtube.com/watch?v=6S6hm2QKFdA
-
-    - #### Instruction of deployment: 
-        web application is deployed and load balancer is configured
-
-    - #### Collaborations and Work Distribution:
-
-        Estefany: Task 1, Task 4
-        Michelle: Task 2, Task 3, Task 4
 
 
 - # Connection Pooling
